@@ -4,16 +4,3 @@ pandas
 flask
 scikit-learn
 pip
-wheel
-Jinja2
-MarkupSafe
-pytz==2023.3.post1
-werkzeug
-click
-blinker
-itsdangerous
-setuptools
-scipy
-six
-packaging
-python-dateutil
