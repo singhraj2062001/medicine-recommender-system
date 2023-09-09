@@ -84,9 +84,18 @@
             margin-left: 20px;
         }
 
-         @media (max-width: 768px) {
+         @media (max-width: 992px) {
           .navbar {
-            display: none;
+            display: flex;
+            flex-direction: column;
+          }
+
+          .navbar a {
+            text-align: left;
+          }
+
+          .navbar .hamburger {
+            display: block;
           }
         }
          
