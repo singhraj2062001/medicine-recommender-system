@@ -33,7 +33,7 @@ def recommend_ui():
 @app.route("/recommend_medicines", methods=['POST'])
 def recommend():
     vector  = cv.fit_transform(new_df['tags']).toarray()
-    similarity = cosine_similarity(vector)[:, :2500]
+    similarity = cosine_similarity(vector)[:, :1500]
     user_input = request.form.get('user_input')
     recommended_medicine = []
     med_index = new_df[new_df['Name'] == user_input].index[0]
