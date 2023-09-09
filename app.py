@@ -11,10 +11,6 @@ new_df = pd.read_pickle('new_df.pkl')
 use_compos_df = pd.read_pickle('use_compos_df.pkl')
 
 cv = CountVectorizer(max_features = 5000, stop_words='english')
-vector  = cv.fit_transform(new_df['tags']).toarray()
-similarity = cosine_similarity(vector)
-
-
 
 
 app = Flask(__name__)
@@ -36,6 +32,8 @@ def recommend_ui():
 
 @app.route("/recommend_medicines", methods=['POST'])
 def recommend():
+    vector  = cv.fit_transform(new_df['tags']).toarray()
+    similarity = cosine_similarity(vector)
     user_input = request.form.get('user_input')
     recommended_medicine = []
     med_index = new_df[new_df['Name'] == user_input].index[0]
@@ -54,7 +52,8 @@ def recommend():
     # Extract the unique items from the dictionary
     unique_list = list(unique_data.values())
     # Printing the unique data
-    print(unique_list)
+    del similarity
+    del vector
     return render_template('recommend1.html', data=unique_list)
 
 
