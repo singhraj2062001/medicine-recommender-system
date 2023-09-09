@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medicine RecommenderSystem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <style>
+        /* Add your CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif; /* Change the font family as needed */
+            background-color: black;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .navbar {
+            background-color: #36454F;
+            overflow: hidden;
+            text-align: center;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .navbar a {
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            padding: 14px 14px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            display: block; /* Display each link as a block element */
+        }
+
+        .navbar a:hover {
+            background-color: cyan;
+            color: black;
+        }
+
+
+        h2 {
+            font-size: 23px;
+            font-weight: 600;
+            color: white;
+            margin-top: 20px;
+            margin-left:20px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #F5F5DC;
+            margin-left:20px
+        }
+
+        li {
+             font-size: 15px;
+             color: cyan;
+             margin-left: 10px;
+             padding-bottom:15px
+        }
+
+        .creator {
+            bottom: 10px;
+            left: 10px;
+            font-size: 14px;
+            color: #888;
+            margin-left:40px
+        }
+
+        .image-container {
+            float: right;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="/" style="color:white">Medicine Recommender System</a>
+    </div>
+
+    <div class="navbar" id="myNavbar">
+        <a href="/recommend1">Recommendations Based On Medicine Name</a>
+        <a href="/recommend3">Recommendations Based On Disease</a>
+        <a href="/recommend2">Recommendations Based On Salt Composition</a>
+
+    </div>
+
+
+    <div class="image-container">
+        <img src="data:image/jpeg;base64,{{ base64_image }}" alt="Medicine Image" width="500" height="400">
+    </div>
+
+
+    <div>
+        <h2>How It Works?</h2>
+            <ul>
+                <li><strong>Medicine Name Recommendations:</strong> Enter full or partial medicine names to get tailored suggestions.</li>
+                <li><strong>Composition-Based Recommendations:</strong> Find medicines based on specific salt compositions.</li>
+                <li><strong>Use-Based Recommendations:</strong> Discover medicines commonly prescribed for specific conditions.</li>
+            </ul>
+
+        <h2>Explore and Empower Your Healthcare Decisions :-</h2>
+            <ul>
+                <li>Simplify your healthcare choices with the Medicine Recommender System.</li>
+                <li>Whether you're a healthcare professional or an individual seeking accurate drug information</li>
+                <li>our system is designed to serve your needs effectively.</li>
+            </ul>
+
+        <h2>About the Creator :-</h2>
+
+
+
+        <p class="creator">Creator: <a href="https://www.linkedin.com/in/singh-navjot206/">Navjot Singh</a></p>
+
+    </div>
+
+
+
+
+
+</body>
+</html>
