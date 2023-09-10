@@ -4,3 +4,4 @@ pandas
 flask
 scikit-learn
 pip
+gzip
