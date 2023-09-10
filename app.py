@@ -5,6 +5,7 @@ import base64
 import pickle
 import numpy as np
 import pandas as pd
+import gzip
 
 
 new_df = pd.read_pickle('new_df.pkl')
